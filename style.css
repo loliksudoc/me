@@ -17,8 +17,8 @@ header {
 }
 
 header img.logo {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin-left: 10px;
 }
 
@@ -39,34 +39,36 @@ nav a {
     margin: 5px;
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    transition: background 0.3s;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #0077b6, #00a6fb);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: none;
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
+    background: linear-gradient(135deg, #005f87, #0088cc);
+    transform: scale(1.05);
 }
 
 .block {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px;
+    padding: 30px;
     background-color: white;
-    margin: 15px auto;
+    margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-    max-width: 90%;
+    max-width: 95%;
     flex-wrap: wrap;
 }
 
 .block img {
-    max-width: 45%;
+    max-width: 40%;
     border-radius: 10px;
 }
 
@@ -79,14 +81,14 @@ nav a:hover {
 }
 
 .block h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #0088cc;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .block p {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 12px;
+    line-height: 1.4;
 }
 
 .block.center {
@@ -94,7 +96,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 footer {
@@ -102,22 +104,7 @@ footer {
     padding: 15px;
     background-color: #0088cc;
     color: white;
-    margin-top: 20px;
-}
-
-@media (max-width: 1024px) {
-    .block {
-        flex-direction: column;
-        text-align: center;
-    }
-    .block img {
-        max-width: 70%;
-        margin-bottom: 15px;
-    }
-    nav a {
-        font-size: 14px;
-        padding: 6px 10px;
-    }
+    margin-top: 15px;
 }
 
 @media (max-width: 768px) {
@@ -130,27 +117,38 @@ footer {
         align-items: center;
     }
     .block {
-        padding: 25px;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
     }
     .block h2 {
-        font-size: 22px;
+        font-size: 18px;
     }
     .block p {
-        font-size: 13px;
+        font-size: 12px;
     }
     .block img {
         max-width: 80%;
+        margin-bottom: 10px;
+    }
+    nav a {
+        font-size: 13px;
+        padding: 8px 12px;
     }
 }
 
-@media (min-width: 1920px) {
-    body {
-        font-size: 22px;
-    }
+@media (max-width: 480px) {
     .block {
-        max-width: 75%;
+        padding: 15px;
+    }
+    .block h2 {
+        font-size: 16px;
+    }
+    .block p {
+        font-size: 11px;
     }
     nav a {
-        font-size: 20px;
+        font-size: 12px;
+        padding: 6px 10px;
     }
 }
